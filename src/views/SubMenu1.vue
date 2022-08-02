@@ -193,16 +193,19 @@ export default {
 </script>
 
 <style>
+
 * {
   margin: 0;
   padding: 0;
   color: #a1814d;
+   
 }
 
 #wrap {
   /* width: 100%; */
-  width: 480px;
+min-width: 360px;
   margin: 0 auto;
+ max-width: 945px;
 }
 
 .title {
@@ -324,9 +327,7 @@ export default {
 
   /*  background: white; */
 }
-.mc > div {
-  /* border: 1px solid red; */
-}
+
 .sub1_burger {
   width: 70px;
   height: 60px;

@@ -1,8 +1,15 @@
 <template>
+
+
   <v-bottom-navigation
     :value="value"
     color="#FFBB4E"
     grow
+
+
+
+ 
+ 
   >
    
       <v-btn to="/">
@@ -36,6 +43,9 @@
 
     </v-btn>
   </v-bottom-navigation>
+
+
+
 </template>
 
 <script>

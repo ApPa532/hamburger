@@ -1,282 +1,430 @@
 <template>
-  <div>
-    <div id="section_wrap">
-      <div id="top_wrap">
-        <div class="top_menu">
-          <h2>찜</h2>
-          <h3>이 중에 골라버거!</h3>
-          <h4>총 5개</h4>
-        </div>
-      </div>
-      <!-- #top_wrap -->
 
-      <div id="mid_wrap">
-        <div class="like_list">
-          <div class="like">
-            <div class="like_wrap">
-              <div class="like_mark"></div>
-              <div class="bur_img"></div>
-              <p>브랜드</p>
-              <h5>불고기 버거</h5>
-              <div class="price_wrap">
-                <div class="set_price">
-                  <p>세트</p>
-                  <p class="price">5,500 ₩</p>
-                </div>
-                <div class="single_price">
-                  <p>싱글</p>
-                  <p class="price">2,500 ₩</p>
-                </div>
-              </div>
-              <!-- .price_wrap -->
-            </div>
-            <!-- .like_wrap -->
-          </div>
-          <!-- .like -->
-          <div class="like">
-            <div class="like_wrap">
-              <div class="like_mark"></div>
-              <div class="bur_img"></div>
-              <p>브랜드</p>
-              <h5>불고기 버거</h5>
-              <div class="price_wrap">
-                <div class="set_price">
-                  <p>세트</p>
-                  <p class="price">5,500 ₩</p>
-                </div>
-                <div class="single_price">
-                  <p>싱글</p>
-                  <p class="price">2,500 ₩</p>
-                </div>
-              </div>
-              <!-- .like -->
-            </div>
-            <!-- .like_wrap -->
-          </div>
-          <!-- .like -->
-          <div class="like">
-            <div class="like_wrap">
-              <div class="like_mark"></div>
-              <div class="bur_img"></div>
-              <p>브랜드</p>
-              <h5>불고기 버거</h5>
-              <div class="price_wrap">
-                <div class="set_price">
-                  <p>세트</p>
-                  <p class="price">5,500 ₩</p>
-                </div>
-                <div class="single_price">
-                  <p>싱글</p>
-                  <p class="price">2,500 ₩</p>
-                </div>
-              </div>
-            </div>
-            <!-- .like_wrap -->
-          </div>
-          <!-- .like -->
-          <div class="like">
-            <div class="like_wrap">
-              <div class="like_mark"></div>
-              <div class="bur_img"></div>
-              <p>브랜드</p>
-              <h5>불고기 버거</h5>
-              <div class="price_wrap">
-                <div class="set_price">
-                  <p>세트</p>
-                  <p class="price">5,500 ₩</p>
-                </div>
-                <div class="single_price">
-                  <p>싱글</p>
-                  <p class="price">2,500 ₩</p>
-                </div>
-              </div>
-            </div>
-            <!-- .like_wrap -->
-          </div>
-          <!-- .like -->
-          <div class="like">
-            <div class="like_wrap">
-              <div class="like_mark"></div>
-              <div class="bur_img"></div>
-              <p>브랜드</p>
-              <h5>불고기 버거</h5>
-              <div class="price_wrap">
-                <div class="set_price">
-                  <p>세트</p>
-                  <p class="price">5,500 ₩</p>
-                </div>
-                <div class="single_price">
-                  <p>싱글</p>
-                  <p class="price">2,500 ₩</p>
-                </div>
-              </div>
-            </div>
-            <!-- .like_wrap -->
-          </div>
-          <!-- .like -->
+<div>
+    <div id="nav">
+      <!-- nav_back -->
+      <div>
+        <div class="back">
+          <router-link to="/">
+            <img :src="head1" alt="뒤로가기" width="22" height="22" />
+          </router-link>
+        </div>
+        <div class="mypage">
+         <router-link to="/login"> <img :src="head2" alt="마이페이지" width="60" height="62" /></router-link>
         </div>
       </div>
     </div>
-  </div>
+    
+    
+    
+    
+    
+    <div class="section_wrapp">
+        
+            <div class="sub4_top">
+              <!-- 검색창 부분 -->
+              <div class="title">
+                <h1>오늘 뭐 버거?</h1>
+                <h2>인기메뉴</h2>
+              </div>
+              <div class="searchwrap">
+                <input type="search" name="search" />
+              </div>
+            </div>
+            <div class="sub4_bottom">
+              <!-- 검색창 아래 컨텐츠부분? -->
+        
+              <ul class="select_tab">
+                <!-- 셀렉버튼 -->
+                <li>
+                  <a href="#none" class="tab_on">소고기</a>
+                </li>
+                <li>
+                  <a href="#none">닭고기</a>
+                </li>
+                <li>
+                  <a href="#none">돼지고기</a>
+                </li>
+                <li>
+                  <a href="#none">새우</a>
+                </li>
+                <li>
+                  <a href="#none">기타</a>
+                </li>
+              </ul>
+        
+              <div class="burgerwrap">
+                <!-- 버거컨텐츠 전체박스 -->
+        
+                <a href="#none" class="b_wrap">
+                  <!-- 버거박스 wrap -->
+                  <div class="burger_img">
+                    <!-- 버거사진 -->
+                    <img :src="sub3_1 " width="235" height="190" alt="햄버거"/>
+                  </div>
+        
+                  <div class="burger_box">
+                    <!-- flex때문에 heart_icon,burger_box
+                    위아래로 크기 나눴음.-->
+                    <div class="heart_icon">
+                      <!-- 찜아이콘 -->
+                      <div>
+                        <img :src="sub3_2" width="20" height="18"  alt="찜" />
+                      </div>
+                    </div>
+        
+                    <div class="b_text">
+                      <div class="b_name">
+                        <!-- 이름 -->
+                        <p>롯데리아</p>
+                        <p>불고기 버거</p>
+                      </div>
+                      <div class="b_price">
+                        <!-- 가격 -->
+                        <div>
+                          <p>세트</p>
+                          <p>6,600 ₩</p>
+                        </div>
+                        <div>
+                          <p>단품</p>
+                          <p>4,500 ₩</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- class="b_wrap" -->
+        
+                <a href="#none" class="b_wrap">
+                  <div class="burger_img">
+                    <img :src="sub3_3" width="235" height="190" alt="햄버거"/>
+                  </div>
+        
+                  <div class="burger_box">
+                    <div class="heart_icon">
+                      <div>
+                 <img :src="sub3_2" width="20" height="18"  alt="찜"/>
+                      </div>
+                    </div>
+        
+                    <div class="b_text">
+                      <div class="b_name">
+                        <!-- 이름 -->
+                        <p>버거킹</p>
+                        <p>베이컨치즈와퍼</p>
+                      </div>
+                      <div class="b_price">
+                        <!-- 가격 -->
+                        <div>
+                          <p>세트</p>
+                          <p>9,200 ₩</p>
+                        </div>
+                        <div>
+                          <p>단품</p>
+                          <p>8,200 ₩</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- class="b_wrap" -->
+        
+                <a href="#none" class="b_wrap">
+                  <div class="burger_img">
+                    <img :src="sub3_4" width="235" height="190" alt="햄버거"/>
+                  </div>
+        
+                  <div class="burger_box">
+                    <div class="heart_icon">
+                      <div>
+                        <img :src="sub3_2" width="20" height="18" alt="찜"/>
+                      </div>
+                    </div>
+        
+                    <div class="b_text">
+                      <div class="b_name">
+                        <!-- 이름 -->
+                        <p>맥도날드</p>
+                        <p>더블쿼터파운드치즈</p>
+                      </div>
+                      <div class="b_price">
+                        <!-- 가격 -->
+                        <div>
+                          <p>세트</p>
+                          <p>8,400 ₩</p>
+                        </div>
+                        <div>
+                          <p>단품</p>
+                          <p>7,000 ₩</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- class="b_wrap" -->
+              </div>
+            </div>
+    
+    </div>
+</div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "SuB3",
+  data() {
+    return {
+
+
+      sub3_1: require("../assets/hamburger_test.png"),
+       sub3_2: require("../assets/burger_heart.png"),
+       sub3_3: require("../assets/hamburger_test2.png"),
+      sub3_4: require("../assets/hamburger_test3.png"),
+       head1: require("../assets/header_back.svg"),
+       head2: require("../assets/mypage.svg")
+    };
+  }
+};
 </script>
 
 <style>
-@charset "utf-8";
+/* 리셋 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  outline: none;
+  border: 0;
+  outline: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+  font-size: 0;
+  border: 0;
 }
 
-section {
+/* 시작 */
+.section_wrapp {
   width: 100%;
-  height: 830px;
-  min-height: 600px;
-  background-color: #eeeeee;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+   max-width: 945px;
+   margin: 0 auto;
+   min-width: 360px;
 }
 
-#section_wrap {
-  width: 70%;
-  height: 100vh;
-  margin: 50px auto;
+.sub4_top {
+  width: 95%;
+  height: 190px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.sub4_top .title {
+  width: 95%;
+  text-align: left;
+}
+.sub4_top .title h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  color: #000000;
+  padding-bottom: 5px;
+}
+.sub4_top .title h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+.searchwrap {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #dad0d0;
+  border-radius: 10px;
+}
+.searchwrap input {
+  width: 100%;
+  height: 48px;
+  background: url(../assets/search_icon.svg) no-repeat left 5px center;
+  padding-left: 35px;
+  color: #333333;
+  font-size: 18px;
+}
+
+.sub4_bottom {
+  width: 100%;
+  /*  height: 640px; */
+  background-color: rgb(182, 182, 182) FFF;
+}
+
+ul.select_tab {
+  margin: 0 auto;
+  width: 95%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.select_tab li a {
+  background: rgba(176, 182, 198, 0.17);
+  border-radius: 10px;
+  padding: 10px 10px;
+  height: 45px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5e6061;
+}
+/* .select_tab .tab_on{
+    height: 50px;
+    
+} */
+.select_tab .tab_on {
+  background: rgba(255, 156, 7, 0.17);
+  border-radius: 10px;
+  padding: 15px 10px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.burgerwrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.burgerwrap .b_wrap {
+  width: 100%;
+  height: 260px;
+  /*     background-color: steelblue; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
   position: relative;
-  max-width: 1000px;
-  min-width: 360px;
-  min-height: 600px;
 }
+.burgerwrap .b_wrap .burger_img {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 2;
+  
+ 
 
-#top_wrap {
+}
+.burgerwrap .b_wrap .burger_box {
+  margin: 0 auto;
+  width: 95%;
+  height: 230px;
+  background: rgba(248, 247, 244, 0.55);
+  border: 1px solid #ffbb4e;
+  box-shadow: inset -5px -5px 10px rgba(158, 158, 158, 0.41);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.burgerwrap .b_wrap .burger_box .heart_icon {
+  width: 100%;
+  height: 130px;
+  position: relative;
+}
+.burgerwrap .b_wrap .burger_box .heart_icon div {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+.burger_box .b_text {
   width: 100%;
   height: 100px;
-  border-bottom: 2px #cccccc solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 20px;
-  margin-top: 5px;
-}
-
-h4 {
-  font-size: 15px;
-
-  float: right;
-  margin-top: -20px;
-}
-
-#mid_wrap {
-  width: 100%;
-  height: 100%;
-}
-.top_menu {
-  width: 87%;
-  height: 100%;
-  margin: 0 auto;
-
-  min-height: 100px;
-}
-
-.like_list {
-  width: 100%;
-  height: 80%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 45% 45%;
+.burger_box .b_text .b_name {
+  width: 60%;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
   gap: 5px;
-  justify-content: space-between;
-  text-align: center;
 }
-
-.like {
-  background-color: #f8f7f4;
-  border: #ffbb4e solid 1px;
-  border-radius: 20px;
-  width: 80%;
-  height: 80%;
-  margin: 20px auto;
-  max-width: 200px;
-  min-height: 180px;
-  min-width: 115px;
-  box-shadow: rgba(0, 0, 0, 0.5) -1px -1px 3px inset;
-}
-
-.like_wrap {
-  width: 90%;
-  height: 90%;
-
-  margin: 5% auto;
-  position: relative;
-}
-
-.like_mark {
-  height: 15px;
-  width: 15px;
-  background-color: wheat;
-  position: absolute;
-  right: 0;
-}
-
-.bur_img {
-  width: 70%;
-  height: 40%;
-  background: url(../assets/ham1.png) no-repeat center center;
-  background-size: 100%;
-  margin: 0 auto;
-  max-width: 100px;
-  position: relative;
-  top: 15px;
-}
-
-.like_wrap > p {
-  margin-top: 20%;
+.burger_box .b_text .b_name p {
   text-align: left;
-  font-size: 70%;
 }
-
-.like_wrap h5 {
-  text-align: left;
+.burger_box .b_text .b_name p:nth-child(1) {
+  font-weight: 600;
   font-size: 14px;
-  margin-top: 2px;
-  margin-bottom: 8%;
-  min-width: 12px;
+  line-height: 16px;
+  color: #a2814d;
+}
+.burger_box .b_text .b_name p:nth-child(2) {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #a2814d;
 }
 
-.price_wrap {
-  width: 100%;
-  height: 20%;
-
-  display: grid;
-  grid-template-rows: 50% 50%;
-  min-height: 30px;
-}
-
-.price_wrap .set_price {
-  width: 100%;
-
+.burger_box .b_text .b_price {
+  width: 40%;
+  padding-right: 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
 }
-.price_wrap .single_price {
-  width: 100%;
-
+.burger_box .b_text .b_price div {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
 }
-
-.price_wrap p {
-  font-size: 12px;
-}
-.price {
-  font-weight: bold;
+.burger_box .b_text .b_price div p:nth-child(1) {
+  width: 40%;
+  font-weight: 600;
   font-size: 14px;
+  line-height: 16px;
+  color: #a2814d;
+}
+.burger_box .b_text .b_price div p:nth-child(2) {
+  width: 60%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #a2814d;
 }
 </style>
