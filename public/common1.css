@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 폰트 변경 완 */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 *{   /* 전체선택자 */
 	margin:0;
@@ -29,7 +29,7 @@ li{
 body,input {
 	font-size:12px;
 	font-weight:100; /* IE8 이하버전 대응 */
-	font-family: 'IBM Plex Sans KR', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 table{
 	border-collapse:collapse; /* 칸 사이의 기본 여백 제거 및 중첩 테두리 상쇄 효과 */
