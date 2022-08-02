@@ -90,20 +90,22 @@ div {
   font-weight: bold;
 }
 .sub2_search {
-  width: 90%;
+  width: 100%;
   height: 40px;
   outline: 1px solid rgb(212, 212, 212);
   border-radius: 5px;
   margin-bottom: 20px;
 }
 .search_area {
+  width: 90%;
   position: relative;
+  margin: 0 auto;
 }
 .btn_search_font {
   font-size: 1.5em;
   position: absolute;
   top: 15%;
-  right: 7%;
+  right: 3%;
 }
 
 .sub2_event_txt {
@@ -147,6 +149,7 @@ div {
   height: 300px;
 }
 .sub2_card > p {
+  text-align: center;
   font-size: 1.4em;
   font-weight: bold;
 }

@@ -261,13 +261,14 @@ export default {
   background-position: 50%;
 }
 .plus {
+  text-align: center;
   width: 34px;
   height: 34px;
   border-radius: 50%;
 
   border: 2px solid #ffbb4e;
   font-size: 1.5em;
-  line-height: 32px;
+  line-height: 30px;
 }
 /* 재료박스 */
 
