@@ -1,20 +1,45 @@
 <template>
   <div>
-    <div id="nav">
-      <!-- nav_back -->
+    <div id="open_menu" v-if="openmenu == true">
+      <div class="menuwrap">
+        <div class="close" @click="openmenu = false">
+          <div class="close_btn">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="profile">
+          <img :src="Profile" alt="프로필" width="121" height="121">
+          <h2>버거싶다</h2>
+        </div>
+        <div class="menu0">
+          <div>
+            <router-link class="menu1" to="/">로그아웃</router-link>
+          </div>
+          <div>
+            <router-link class="menu1" to="/">마이페이지</router-link>
+          </div>
+        </div>
+        <div class="copy">
+          <h1>Copyright 2022. Team 3 . All rights reserved.</h1>
+        </div> 
+      </div>
+    </div>
+
+
+    <div id="nav"><!--nav_main-->
       <div>
-        <div class="back">
-          <router-link to="/">
-            <img :src="head1" alt="뒤로가기" width="22" height="22" />
-          </router-link>
+        <div class="menu" @click="openmenu = true">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div class="mypage">
-          <router-link to="/login">
-            <img :src="head2" alt="마이페이지" width="60" height="62" />
-          </router-link>
+          <router-link to="/login" class="mypage"></router-link>
         </div>
       </div>
     </div>
+
     <div id="wrap">
       <span class="title">취향대로 골라 버거!</span>
       <!-- 타이틀 -->
@@ -183,26 +208,30 @@
 export default {
   data() {
     return {
+      openmenu : false,
+      /* Profile: require("../assets/open_profile.png"), */
+      Header1: require("../assets/header_logo.svg"),
       chip1: true,
       chip4: true,
-      head1: require("../assets/header_back.svg"),
-      head2: require("../assets/mypage.svg")
     };
   }
 };
 </script>
 
 <style>
+
 * {
   margin: 0;
   padding: 0;
   color: #a1814d;
+   
 }
 
 #wrap {
   /* width: 100%; */
-  width: 480px;
+min-width: 360px;
   margin: 0 auto;
+ max-width: 945px;
 }
 
 .title {
@@ -225,7 +254,7 @@ export default {
   box-sizing: border-box;
 }
 .tp_box {
-  width: 130px;
+  width: 100px;
   height: 190px;
   border-radius: 65px;
 
@@ -261,14 +290,19 @@ export default {
   background-position: 50%;
 }
 .plus {
-  text-align: center;
   width: 34px;
   height: 34px;
   border-radius: 50%;
-
+  
   border: 2px solid #ffbb4e;
   font-size: 1.5em;
-  line-height: 30px;
+  line-height: 32px;
+
+  text-align: center;
+}
+.plus i {
+  margin: 0 auto;
+  width: 100%;
 }
 /* 재료박스 */
 
@@ -325,9 +359,7 @@ export default {
 
   /*  background: white; */
 }
-.mc > div {
-  /* border: 1px solid red; */
-}
+
 .sub1_burger {
   width: 70px;
   height: 60px;
@@ -358,7 +390,7 @@ export default {
   background-size: 90%;
 }
 .mc_brand {
-  width: 163px;
+  width: 120px;
   margin-top: 5px;
   text-align: left;
   font-size: 0.9em;

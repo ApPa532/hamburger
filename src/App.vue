@@ -1,7 +1,8 @@
 <template>
   <v-app>
-    <v-main>
-     <router-view />
+    <v-main class="pdb">
+      <Splash :isLoading="isLoading" />
+      <router-view v-if="!isLoading" />
     </v-main>
     <MyFooter />
   </v-app>
@@ -9,19 +10,31 @@
 
 <script>
 import MyFooter from "./components/BottomMenu.vue";
+import Splash from "./components/Splash.vue"; //로드
 
 export default {
-  
-  name: 'App',
-  
- components: {
+  name: "App",
 
-    MyFooter
+  components: {
+    MyFooter,
+    Splash,
   },
 
   data: () => ({
     //
-    
+    isLoading: true,
   }),
-}
+
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 2500);
+  },
+};
 </script>
+
+<style>
+  .pdb{
+    padding-bottom: 56px !important;
+  }
+</style>
