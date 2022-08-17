@@ -54,7 +54,7 @@
             <!-- 버거박스 wrap -->
             <div class="burger_img">
               <!-- 버거사진 -->
-              <img :src="sub3_1" width="235" height="190" alt="햄버거" />
+              <img :src="sub3_1" width="220" height="170" alt="햄버거" />
             </div>
 
             <div class="burger_box">
@@ -91,7 +91,7 @@
 
           <a href="#none" class="b_wrap">
             <div class="burger_img">
-              <img :src="sub3_3" width="235" height="190" alt="햄버거" />
+              <img :src="sub3_3" width="220" height="170" alt="햄버거" />
             </div>
 
             <div class="burger_box">
@@ -125,7 +125,7 @@
 
           <a href="#none" class="b_wrap">
             <div class="burger_img">
-              <img :src="sub3_4" width="235" height="190" alt="햄버거" />
+              <img :src="sub3_4" width="220" height="170" alt="햄버거" />
             </div>
 
             <div class="burger_box">
@@ -157,7 +157,7 @@
           </a>
           <a href="#none" class="b_wrap">
             <div class="burger_img">
-              <img :src="sub3_5" width="235" height="190" alt="햄버거" />
+              <img :src="sub3_5" width="220" height="170" alt="햄버거" />
             </div>
 
             <div class="burger_box">
@@ -306,41 +306,6 @@ img {
   background-color: rgb(182, 182, 182) FFF;
 }
 
-ul.select_tab {
-  margin: 0 auto;
-  width: 95%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-ul.select_tab li a {
-  background: rgba(176, 182, 198, 0.17);
-  border-radius: 10px;
-  padding: 10px 10px;
-  height: 45px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #5e6061;
-}
-/* .select_tab .tab_on{
-    height: 50px;
-    
-} */
-.select_tab .tab_on {
-  background: rgba(255, 156, 7, 0.17);
-  border-radius: 10px;
-  padding: 15px 10px;
-  height: 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 50px;
-  color: #000000;
-}
 
 .burgerwrap {
   width: 100%;
@@ -408,8 +373,8 @@ ul.select_tab li a {
   text-align: left;
 }
 .burger_box .b_text .b_name p:nth-child(1) {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 17px;
   line-height: 16px;
   color: #a2814d;
 }
@@ -434,16 +399,16 @@ ul.select_tab li a {
 }
 .burger_box .b_text .b_price div p:nth-child(1) {
   width: 40%;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 16px;
   color: #a2814d;
   text-align: right;
 }
 .burger_box .b_text .b_price div p:nth-child(2) {
   width: 60%;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 18px;
   color: #a2814d;
   text-align: right;

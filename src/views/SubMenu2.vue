@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div class="section_wrapp">
+    <div class="section_wrap">
       <div class="sub4_top">
         <!-- 검색창 부분 -->
         <div class="title">
@@ -42,9 +42,6 @@
           <li>
             <a href="#none">KFC</a>
           </li>
-          <li>
-            <a href="#none">맘스터치</a>
-          </li>
         </ul>
 
         <div class="burgerwrap">
@@ -54,7 +51,7 @@
             <!-- 버거박스 wrap -->
             <div class="burger_img">
               <!-- 버거사진 -->
-              <img :src="newburger1" width="235" height="190" alt="햄버거" />
+              <img :src="newburger1" width="220" height="170" alt="햄버거" />
             </div>
 
             <div class="burger_box">
@@ -91,7 +88,7 @@
 
           <a href="#none" class="b_wrap">
             <div class="burger_img">
-              <img :src="newburger2" width="235" height="190" alt="햄버거" />
+              <img :src="newburger2" width="220" height="170" alt="햄버거" />
             </div>
 
             <div class="burger_box">
@@ -125,7 +122,7 @@
 
           <a href="#none" class="b_wrap">
             <div class="burger_img">
-              <img :src="newburger3" width="235" height="190" alt="햄버거" />
+              <img :src="newburger3" width="220" height="170" alt="햄버거" />
             </div>
 
             <div class="burger_box">
@@ -214,13 +211,14 @@ img {
 }
 
 /* 시작 */
-.section_wrapp {
+.section_wrap {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .sub4_top {
@@ -260,7 +258,8 @@ img {
   height: 48px;
   background: url(../assets/search_icon.svg) no-repeat left 5px center;
   padding-left: 35px;
-  color: #333333;
+  color: #363636;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -281,30 +280,28 @@ ul.select_tab {
 ul.select_tab li {
 }
 ul.select_tab li a {
+  display: block;
   background: rgba(176, 182, 198, 0.17);
   border-radius: 10px;
-  padding: 10px 10px;
-  height: 45px;
+  padding: 10px 14px;
+  /* height: 45px; */
   font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  /* line-height: 15px; */
   color: #5e6061;
 }
-/* .select_tab .tab_on{
-    height: 50px;
-    
-} */
+
 .select_tab .tab_on {
   background: rgba(255, 156, 7, 0.17);
   border-radius: 10px;
-  padding: 15px 10px;
-  height: 50px;
+  padding: 12px 14px;
+  /* height: 50px; */
   font-style: normal;
   font-weight: 700;
-  font-size: 13px;
-  line-height: 50px;
-  color: #000000;
+  font-size: 16px;
+  /* line-height: 50px; */
+  color: #321F00;
 }
 
 .burgerwrap {
@@ -368,14 +365,14 @@ ul.select_tab li a {
   padding-left: 30px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
 }
 .burger_box .b_text .b_name p {
   text-align: left;
 }
 .burger_box .b_text .b_name p:nth-child(1) {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 17px;
   line-height: 16px;
   color: #a2814d;
 }
@@ -391,7 +388,7 @@ ul.select_tab li a {
   padding-right: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 .burger_box .b_text .b_price div {
   display: flex;
@@ -400,16 +397,16 @@ ul.select_tab li a {
 }
 .burger_box .b_text .b_price div p:nth-child(1) {
   width: 40%;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 16px;
   color: #a2814d;
   text-align: right;
 }
 .burger_box .b_text .b_price div p:nth-child(2) {
   width: 60%;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 18px;
   color: #a2814d;
   text-align: right;

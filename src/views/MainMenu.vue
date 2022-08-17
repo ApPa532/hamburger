@@ -35,7 +35,7 @@
             <span></span>
         </div>
         <div class="logo" style="padding-left:20px">
-          <img :src="Header1" />
+          <img :src="Header1" width="54" height="38" />
         </div>
         <div class="mypage">
           <router-link to="/login" class="mypage"></router-link>
@@ -51,7 +51,7 @@
       </div>
 
       <div class="sec2">
-        <router-link to="/">
+        <router-link to="/submenu2">
           <img :src="secUrl2" />
           <h3>어디 버거?</h3>
           <p>새로 나온 버거 살펴보기</p>
@@ -90,7 +90,7 @@ export default {
   data() {
     return {
       openmenu : false,
-      /* Profile: require("../assets/open_profile.png"), */
+      Profile: require("../assets/open_profile.png"),
       Header1: require("../assets/header_logo.svg"),
 
       secUrl1: require("../assets/sec1.png"),
@@ -119,7 +119,7 @@ a {
 #open_menu{
   position: fixed;
   z-index: 99;
-  width: 80%;
+  width: 50%;
   height: 100vh;
   background: #E52A2A;
   display: flex;
@@ -129,7 +129,7 @@ a {
   width: 80%;
   height: 90vh;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -219,7 +219,7 @@ a {
 
 #nav{
   width: 100%;
-  height: 90px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;

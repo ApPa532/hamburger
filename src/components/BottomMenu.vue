@@ -1,15 +1,8 @@
 <template>
-
-
   <v-bottom-navigation
     :value="value"
     color="#FFBB4E"
     grow
-
-
-
- 
- 
   >
    
       <v-btn to="/">
@@ -36,16 +29,13 @@
 
     </v-btn>
 
-     <v-btn to="submenu5">
+    <v-btn to="submenu5">
         
       <v-icon>mdi-heart-plus-outline</v-icon>
       <span>찜</span>
 
     </v-btn>
   </v-bottom-navigation>
-
-
-
 </template>
 
 <script>

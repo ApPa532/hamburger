@@ -209,7 +209,7 @@ export default {
   data() {
     return {
       openmenu : false,
-      /* Profile: require("../assets/open_profile.png"), */
+      Profile: require("../assets/open_profile.png"),
       Header1: require("../assets/header_logo.svg"),
       chip1: true,
       chip4: true,

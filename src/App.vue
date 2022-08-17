@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main class="pdb">
+    <v-main>
       <Splash :isLoading="isLoading" />
       <router-view v-if="!isLoading" />
     </v-main>
@@ -32,9 +32,3 @@ export default {
   },
 };
 </script>
-
-<style>
-  .pdb{
-    padding-bottom: 56px !important;
-  }
-</style>
